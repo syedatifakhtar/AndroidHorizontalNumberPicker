@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout 
+    android:layout_width="100dp"
+    android:layout_height="80dp" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="L" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="28dp"
+        android:layout_height="32dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:text="R" />
+        <HorizontalScrollView
+            android:id="@+id/numberPickerHorizontalScrollViewContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" 
+       	    android:layout_alignBottom="@+id/button1"
+        	android:layout_alignTop="@+id/button1"
+        	android:layout_toLeftOf="@+id/button2"
+        	android:layout_toRightOf="@+id/button1"
+        	android:orientation="vertical" 
+        	android:requiresFadingEdge="horizontal"
+        	android:fadingEdgeLength="20dp"
+        >
+        	<LinearLayout 
+        	    android:id="@+id/linearLayoutNumberContainer"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="horizontal"
+        	    ></LinearLayout>
+        </HorizontalScrollView>    
+
+</RelativeLayout>
+</merge>
